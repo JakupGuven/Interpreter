@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DB5C8851217F9A4300414A91 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB5C8850217F9A4300414A91 /* main.cpp */; };
+		DB5C8859217F9A4D00414A91 /* Interpreter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB5C8857217F9A4D00414A91 /* Interpreter.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,9 @@
 
 /* Begin PBXFileReference section */
 		DB5C884D217F9A4300414A91 /* Interpreter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Interpreter; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB5C8850217F9A4300414A91 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		DB5C8857217F9A4D00414A91 /* Interpreter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Interpreter.cpp; sourceTree = "<group>"; };
+		DB5C8858217F9A4D00414A91 /* Interpreter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Interpreter.hpp; sourceTree = "<group>"; };
+		DBA5F7B42183483200053641 /* input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,9 @@
 		DB5C884F217F9A4300414A91 /* Interpreter */ = {
 			isa = PBXGroup;
 			children = (
-				DB5C8850217F9A4300414A91 /* main.cpp */,
+				DB5C8857217F9A4D00414A91 /* Interpreter.cpp */,
+				DB5C8858217F9A4D00414A91 /* Interpreter.hpp */,
+				DBA5F7B42183483200053641 /* input.txt */,
 			);
 			path = Interpreter;
 			sourceTree = "<group>";
@@ -118,7 +122,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB5C8851217F9A4300414A91 /* main.cpp in Sources */,
+				DB5C8859217F9A4D00414A91 /* Interpreter.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

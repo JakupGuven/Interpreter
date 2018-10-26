@@ -1,3 +1,13 @@
-config hex
-config bin
 config dec
+print 1 + 1
+print 3 + 3 * 3
+x = 5 * ( 5 + 15 - 10 )
+y = x * -2
+print x
+print y
+x2 = x / 5 + 5
+print x2
+config hex
+print x2
+config bin
+print x2

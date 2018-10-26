@@ -13,9 +13,8 @@
 int main(int argc, char* argv[]){
     Interpreter interpreter = Interpreter(std::cout);
     if(argc > 1){
-        std::cout << argv[1] << std::endl;
         std::ifstream file;
-        file.open("input.txt");
+        file.open(argv[1]);
         if(file.is_open()){
             while(file.good()){
                 std::string line;
