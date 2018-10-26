@@ -1,0 +1,3 @@
+config hex
+config bin
+config dec

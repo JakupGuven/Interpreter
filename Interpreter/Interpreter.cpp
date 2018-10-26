@@ -1,10 +1,6 @@
 //
 //  Interpreter.cpp
 //  Interpreter
-//
-//  Created by Jakup Güven on 2018-10-23.
-//  Copyright © 2018 Cybercom. All rights reserved.
-//
 
 #include <iostream>
 #include <fstream>
@@ -19,7 +15,7 @@ int main(int argc, char* argv[]){
     if(argc > 1){
         std::cout << argv[1] << std::endl;
         std::ifstream file;
-        file.open("/Users/Jakup/Courses/CPP/Labb/Interpreter/Interpreter/input.txt");
+        file.open("input.txt");
         if(file.is_open()){
             while(file.good()){
                 std::string line;
