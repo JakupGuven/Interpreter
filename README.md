@@ -2,34 +2,37 @@
 A simple interpreter for a simple programming language.
 
 Run it on the command line without arguments to start the interpreter in REPL mode.
-Alternatively enter the path to a text file with source code as an argument like to run your program like so:
-    interpreter sourcecode.txt
+Alternatively enter the path to a text file with source code as an argument like to run your program like so:<br />
+    interpreter sourcecode.txt<br />
  
-Some example code: 
-  config dec
-  print 1 + 1
-  print 3 + 3 * 3
-  x = 5 * ( 5 + 15 - 10 )
-  y = x * -2
-  print x
-  print y
-  x2 = x / 5 + 5
-  print x2
-  config hex
-  print x2
-  config bin
-  print x2
- 
- 
-Grammar for the language: 
-  Stmt:= ConfigStmt | AssgStmt | PrintStmt
-  ConfigStmt := "config" [ "dec" | "hex" | "bin” ]
-  AssgStmt := Variable "=" MathExp
-  PrintStmt := "print" MathExp
-  MathExp := SumExp
-  SumExp := ProductExp [ "+" ProductExp | "–" ProductExp ]*
-  ProductExp := PrimaryExp [ "*" PrimaryExp | "/" PrimaryExp ]*
-  PrimaryExp := Int | Variable | "(" MathExp ")"
+Some example code: <br />
 
-  Variable := [a-zA-z][a-zA-z0-9]*
-  Int := -?[0-9]+
+
+
+  config dec<br />
+  print 1 + 1<br />
+  print 3 + 3 * 3<br />
+  x = 5 * ( 5 + 15 - 10 )<br />
+  y = x * -2<br />
+  print x<br />
+  print y<br />
+  x2 = x / 5 + 5<br />
+  print x2<br />
+  config hex<br />
+  print x2<br />
+  config bin<br />
+  print x2<br />
+ 
+ 
+Grammar for the language: <br />
+  Stmt:= ConfigStmt | AssgStmt | PrintStmt<br />
+  ConfigStmt := "config" [ "dec" | "hex" | "bin” ]<br />
+  AssgStmt := Variable "=" MathExp<br />
+  PrintStmt := "print" MathExp<br />
+  MathExp := SumExp<br />
+  SumExp := ProductExp [ "+" ProductExp | "–" ProductExp ]*<br />
+  ProductExp := PrimaryExp [ "*" PrimaryExp | "/" PrimaryExp ]*<br />
+  PrimaryExp := Int | Variable | "(" MathExp ")"<br />
+
+  Variable := [a-zA-z][a-zA-z0-9]*<br />
+  Int := -?[0-9]+<br />
